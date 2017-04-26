@@ -1,4 +1,5 @@
 **Project Description**
+
 This script will empty the cache folder and puts a new cache.ini file on all SharePoint servers in the farm.
 
 Sometimes an event with ID 6398 is logged in the Windows Application log. This is usually due to the configuration cache being outdated. So you need to perform some steps on the SharePoint server to force a rebuild of the configuration cache.
@@ -11,20 +12,31 @@ Sometimes an event with ID 6398 is logged in the Windows Application log. This i
 
 This script executes these steps for you. You need to be a farm administrator to run this script.
 
-**The full description is available at: **[http://blogs.msdn.com/b/jamesway/archive/2011/05/23/sharepoint-2010-clearing-the-configuration-cache.aspx](http://blogs.msdn.com/b/jamesway/archive/2011/05/23/sharepoint-2010-clearing-the-configuration-cache.aspx)
+**The full description is available at:**
+[http://blogs.msdn.com/b/jamesway/archive/2011/05/23/sharepoint-2010-clearing-the-configuration-cache.aspx](http://blogs.msdn.com/b/jamesway/archive/2011/05/23/sharepoint-2010-clearing-the-configuration-cache.aspx)
 
 A lot of work has been done by: Mickey Jervin ([http://mickeyjervin.wordpress.com](http://mickeyjervin.wordpress.com)) and Nick Hobbs ([http://nickhobbs.wordpress.com](http://nickhobbs.wordpress.com))
 
 **This is the event that could be found in the Windows Application log:**
+
 Log Name:      Application
+
 Source:        Microsoft-SharePoint Products-SharePoint Foundation
+
 Date:          2010-05-05 08:49:22
+
 Event ID:      6398
+
 Task Category: Timer
+
 Level:         Critical
+
 Keywords:     
+
 User:          domain\admin
+
 Computer:      MOSS.domain
+
 
 
 The Execute method of job definition Microsoft.Office.Server.Administration.ProfileSynchronizationSetupJob (ID <GUID>) threw an exception. More information is included below.
