@@ -206,7 +206,7 @@ Write-Host ""
 Load-SharePoint-Powershell
 
 # Get the local farm instance
-$farm = Get-SPServer | where {$_.Role -match "Application"}
+$farm = Get-SPServer | where {($_.Role -match "Application") -or ($_.Role -match "WebFront")}
 
 # Stop the SharePoint Timer Service on each server in the farm
 StopSharePointTimerServicesInFarm $farm
